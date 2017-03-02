@@ -22,6 +22,7 @@ class Extension(ext.Extension):
     def get_config_schema(self):
         schema = super(Extension, self).get_config_schema()
         schema[u'beetslibrary'] = config.Path()
+        schema[u'default_browse_level'] = config.String()
         schema[u'use_original_release_date'] = config.Boolean(optional=True)
         return schema
 
