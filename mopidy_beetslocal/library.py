@@ -511,7 +511,7 @@ class BeetsLocalLibraryProvider(backend.LibraryProvider):
         """
         Transforms a beets item into a mopidy Track
         """
-        logger.warn("_convert_item()")
+        #logger.warn("_convert_item()")
         if not item:
             return
         track_kwargs = {}
@@ -576,10 +576,10 @@ class BeetsLocalLibraryProvider(backend.LibraryProvider):
 
             pass
 
-        logger.warn("kwargs")
-        logger.info(item.year)
-        logger.info(track_kwargs)
-        logger.info(album_kwargs)
+        #logger.warn("kwargs")
+        #logger.info(item.year)
+        #logger.info(track_kwargs)
+        #logger.info(album_kwargs)
 
         album_kwargs['date'] = track_kwargs['date']
 
